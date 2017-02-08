@@ -1,0 +1,45 @@
+<head>
+    <title>ਜਾਪ Counter</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3>Waterloo-Laurier Sikh Students Assocation</h3>
+                        <h1 style="font-size: 60px;">ਜਪੁਜੀ ਸਾਹਿਬ ਜਾਪ</h1>
+                    </div>
+                </div>
+                <div class="inner cover">
+                    {{> hello}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<template name="hello">
+  <h2 class="cover-heading">
+    ਜਾਪ count:
+    <div style="font-size: 100px; font-family: 'Noto Sans Gurmukhi UI', sans-serif;">
+      {{counter}}
+    </div>
+  </h2>
+  <p class="lead">
+    <a id="incrementJaap" href="#" class="btn btn-lg btn-default">
+      Add Jaap
+    </a>
+    <br /><br />
+    <a id="decrementJaap" href="#" class="btn btn-md btn-default">
+      Remove
+    </a>
+  </p>
+  </template>
